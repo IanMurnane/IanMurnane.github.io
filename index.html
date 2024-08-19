@@ -21,18 +21,35 @@
         }
         header, footer {
             background-color: #1f1f1f;
-            text-align: center;
             padding: 1em;
+        }
+        footer {
+            text-align: center;
         }
         header {
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: left;
         }
         header img {
             max-width: 100px;
             height: auto;
             margin-right: 20px;
+        }
+        header .header-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #bbbbbb;
         }
         main {
             padding: 2em;
@@ -67,13 +84,12 @@
 <body>
 <header>
     <img src="pics/logoStoryBearAI.png" alt="Story Bear AI Logo">
-    <h1>Story Bear AI</h1>
+    <div class="header-text">
+        <h1>Story Bear AI</h1>
+        <h3>Create and enjoy AI-generated stories</h3>
+    </div>
 </header>
 <main>
-    <section class="hero" id="home">
-        <h1>Welcome to Story Bear AI</h1>
-        <p>Create and enjoy AI-generated stories</p>
-    </section>
     <section id="about">
         <h2>About Us</h2>
         <p>Story Bear AI uses cutting-edge artificial intelligence to help you create and read unique stories. Our goal is to inspire creativity and provide a fun, engaging experience for users of all ages.</p>
@@ -91,6 +107,7 @@
 <footer>
     <p>&copy; 2024 Story Bear AI. All rights reserved.</p>
     <p><a href="mailto:ianmurnanede@gmail.com">Contact Us</a></p>
+    <p><a href="StoryBearAI-PrivacyPolicy.html">Privacy Policy</a> | <a href="StoryBearAI-TermsOfService.html">Terms of Service</a></p>
 </footer>
 </body>
 </html>
