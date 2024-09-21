@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Story Bear AI - Create and enjoy AI-generated stories.">
-    <meta name="keywords" content="Story Bear AI, AI-generated stories, creative writing">
-    <meta name="author" content="Story Bear AI Team">
-    <title>Story Bear AI - Home</title>
+    <meta name="description" content="Welcome to AppArcade Studios - Explore our innovative apps.">
+    <meta name="keywords" content="AppArcade Studios, mobile apps, innovative solutions">
+    <meta name="author" content="Ian Murnane">
+    <title>AppArcade Studios - Home</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts Example -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style>
         body {
@@ -26,30 +25,10 @@
         footer {
             text-align: center;
         }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
-        }
-        header img {
-            max-width: 100px;
-            height: auto;
-            margin-right: 20px;
-        }
-        header .header-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
         header h1 {
             margin: 0;
             font-size: 2em;
-        }
-        header h3 {
-            margin: 0;
-            font-size: 1.2em;
-            color: #bbbbbb;
+            text-align: center;
         }
         main {
             padding: 2em;
@@ -69,8 +48,37 @@
             margin: 0.5em 0 0;
             font-size: 1.2em;
         }
-        section {
-            margin-bottom: 2em;
+        .apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .app-card, .logo-card {
+            background-color: #222222;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: scale(1.05);
+        }
+        .logo-card {
+            padding: 0;
+            overflow: hidden;
+        }
+        .logo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .app-card img {
+            max-width: 80px;
+            margin-bottom: 1em;
+        }
+        .app-card h3 {
+            margin: 0.5em 0;
         }
         a {
             color: #007bff;
@@ -79,35 +87,157 @@
         a:hover {
             text-decoration: underline;
         }
+        .policy-links {
+            margin-top: 10px;
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #1f1f1f;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 800px;
+            color: white;
+        }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 <header>
-    <img src="pics/logoStoryBearAI.png" alt="Story Bear AI Logo">
-    <div class="header-text">
-        <h1>Story Bear AI</h1>
-        <h3>Create and enjoy AI-generated stories</h3>
-    </div>
+    <h1>AppArcade Studios</h1>
 </header>
 <main>
+    <div class="hero">
+        <h1>Welcome to AppArcade Studios</h1>
+        <p>Explore our innovative apps designed to enhance your experience.</p>
+    </div>
+
     <section id="about">
         <h2>About Us</h2>
-        <p>Story Bear AI uses cutting-edge artificial intelligence to help you create and read unique stories. Our goal is to inspire creativity and provide a fun, engaging experience for users of all ages.</p>
+        <p>At AppArcade Studios, we are dedicated to creating engaging and user-friendly applications that inspire creativity and productivity.</p>
     </section>
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>AI-generated story creation</li>
-            <li>Interactive story reading</li>
-            <li>Personalized content recommendations</li>
-            <li>User-friendly interface</li>
-        </ul>
+
+    <section id="apps">
+        <h2>Our Apps</h2>
+        <div class="apps">
+            <!-- Company Logo Card -->
+            <div class="logo-card">
+                <img src="pics/company_logo.png" alt="AppArcade Studios Logo">
+            </div>
+            <!-- Don't B Late App Card -->
+            <div class="app-card">
+                <img src="pics/logoDontBLate.png" alt="Don't B Late Logo">
+                <h3>Don't B Late</h3>
+                <p>Stay on track with reminders and countdowns.</p>
+                <a href="#" class="learn-more" data-app="dont-blate">Learn More</a>
+                <div class="policy-links">
+                    <a href="DontBLate-PrivacyPolicy.html">Privacy Policy</a> | <a href="DontBLate-TermsOfService.html">Terms of Service</a>
+                </div>
+            </div>
+            <!-- Story Bear AI App Card -->
+            <div class="app-card">
+                <img src="pics/logoStoryBearAI.png" alt="Story Bear AI Logo">
+                <h3>Story Bear AI</h3>
+                <p>Create and enjoy AI-generated stories.</p>
+                <a href="#" class="learn-more" data-app="story-bear-ai">Learn More</a>
+                <div class="policy-links">
+                    <a href="StoryBearAI-PrivacyPolicy.html">Privacy Policy</a> | <a href="StoryBearAI-TermsOfService.html">Terms of Service</a>
+                </div>
+            </div>
+            <!-- Additional app cards can be added here -->
+        </div>
     </section>
 </main>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+</div>
+
 <footer>
-    <p>&copy; 2024 Story Bear AI. All rights reserved.</p>
+    <p>&copy; 2024 Ian Murnane. All rights reserved.</p>
     <p><a href="mailto:ianmurnanede@gmail.com">Contact Us</a></p>
-    <p><a href="StoryBearAI-PrivacyPolicy.html">Privacy Policy</a> | <a href="StoryBearAI-TermsOfService.html">Terms of Service</a></p>
 </footer>
+
+<script>
+    // Modal logic
+    const modal = document.getElementById('modal');
+    const span = document.getElementsByClassName('close')[0];
+    const modalBody = document.getElementById('modal-body');
+
+    document.querySelectorAll('.learn-more').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const app = event.target.getAttribute('data-app');
+            let content = '';
+
+            if (app === 'dont-blate') {
+                content = `
+                    <h2>Don't B Late</h2>
+                    <p>Don't B Late is your personal time management companion. Keep track of important events with countdowns and reminders to help you stay organized.</p>
+                    <ul>
+                        <li>Customizable reminders</li>
+                        <li>Countdown timers</li>
+                        <li>User-friendly interface</li>
+                    </ul>
+                `;
+            } else if (app === 'story-bear-ai') {
+                content = `
+                    <h2>Story Bear AI</h2>
+                    <p>Story Bear AI uses cutting-edge artificial intelligence to generate and read unique stories. It offers an engaging and fun experience for users of all ages.</p>
+                    <ul>
+                        <li>AI-generated story creation</li>
+                        <li>Interactive story reading</li>
+                        <li>Personalized content recommendations</li>
+                    </ul>
+                `;
+            }
+
+            modalBody.innerHTML = content;
+            modal.style.display = 'block';
+        });
+    });
+
+    // Close modal when clicking the X
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // Close modal when clicking outside of the modal content
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
 </body>
 </html>
