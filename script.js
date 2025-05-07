@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p>${app.description}</p>
                         <a href="${app.privacyPolicy}" class="policy-link" target="_blank">Privacy Policy</a>
                         <a href="${app.tos}" class="policy-link" target="_blank">Terms of Service</a>
+                        ${app.discordLink ? `<p>
+                            <i class="fab fa-discord"></i> <a href="${app.discordLink}" class="policy-link" target="_blank">Discord Channel</a>
+                        </p>` : ''}
                     </div>
                 `;
 

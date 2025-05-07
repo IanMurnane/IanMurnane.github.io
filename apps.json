@@ -2,33 +2,36 @@
   "apps": [
     {
       "title": "Don't B Late",
-      "screenshot": "pics/screenshots/dontblate.jpeg",
       "logo": "pics/logos/dontblate.png",
+      "screenshot": "pics/screenshots/dontblate.jpeg",
+      "description": "Stay on track with reminders and countdowns.",
       "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.dont_be_late",
       "appleStore": "",
-      "description": "Stay on time! Don't B Late reads the time aloud and counts down minutes.",
-      "privacyPolicy": "policies/dontblate-privacy.html",
-      "tos": "policies/dontblate-tos.html"
+      "discordLink": "https://discord.gg/mNDANcde",
+      "privacyPolicy": "policies/DontBLate-PrivacyPolicy.html",
+      "tos": "policies/DontBLate-TermsOfService.html"
     },
     {
-      "title": "Story Bear",
-      "screenshot": "pics/screenshots/storybear.jpeg",
+      "title": "Story Bear AI",
       "logo": "pics/logos/storybear.png",
+      "screenshot": "pics/screenshots/storybear.jpeg",
+      "description": "Create and enjoy AI-generated stories.",
       "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai",
       "appleStore": "",
-      "description": "AI-powered stories for teens that adapt as you read.",
-      "privacyPolicy": "policies/storybear-privacy.html",
-      "tos": "policies/storybear-tos.html"
+      "discordLink": "https://discord.gg/mNDANcde",
+      "privacyPolicy": "policies/StoryBearAI-PrivacyPolicy.html",
+      "tos": "policies/StoryBearAI-TermsOfService.html"
     },
     {
-      "title": "Story Cub",
-      "screenshot": "pics/screenshots/storycub.jpeg",
+      "title": "Story Cub AI",
       "logo": "pics/logos/storycub.png",
+      "screenshot": "pics/screenshots/storycub.jpeg",
+      "description": "Create and enjoy AI-generated stories for children.",
       "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai.kid",
       "appleStore": "",
-      "description": "Kid-friendly AI stories that engage and educate.",
-      "privacyPolicy": "policies/storycub-privacy.html",
-      "tos": "policies/storycub-tos.html"
+      "discordLink": "https://discord.gg/mNDANcde",
+      "privacyPolicy": "policies/StoryCubAI-PrivacyPolicy.html",
+      "tos": "policies/StoryCubAI-TermsOfService.html"
     }
   ]
 }

@@ -122,6 +122,10 @@ footer {
     text-decoration: underline;
 }
 
+.app-info .fa-discord {
+    color: #7289da;  /* Discord color */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .app-card {
