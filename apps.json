@@ -1,0 +1,34 @@
+{
+  "apps": [
+    {
+      "title": "Don't B Late",
+      "screenshot": "pics/screenshots/dontblate.jpeg",
+      "logo": "pics/logos/dontblate.png",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.dont_be_late",
+      "appleStore": "",
+      "description": "Stay on time! Don't B Late reads the time aloud and counts down minutes.",
+      "privacyPolicy": "policies/dontblate-privacy.html",
+      "tos": "policies/dontblate-tos.html"
+    },
+    {
+      "title": "Story Bear",
+      "screenshot": "pics/screenshots/storybear.jpeg",
+      "logo": "pics/logos/storybear.png",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai",
+      "appleStore": "",
+      "description": "AI-powered stories for teens that adapt as you read.",
+      "privacyPolicy": "policies/storybear-privacy.html",
+      "tos": "policies/storybear-tos.html"
+    },
+    {
+      "title": "Story Cub",
+      "screenshot": "pics/screenshots/storycub.jpeg",
+      "logo": "pics/logos/storycub.png",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai.kid",
+      "appleStore": "",
+      "description": "Kid-friendly AI stories that engage and educate.",
+      "privacyPolicy": "policies/storycub-privacy.html",
+      "tos": "policies/storycub-tos.html"
+    }
+  ]
+}
