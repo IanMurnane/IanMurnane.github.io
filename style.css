@@ -10,8 +10,19 @@ body {
 header {
     background-color: #121212;
     color: #fff;
-    padding: 2em 0;
-    text-align: center;
+    padding: 2em 1.5em;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-icon {
+    height: 70px;
+    width: auto;
 }
 
 footer {
