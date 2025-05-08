@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
                             <h3>${app.title}</h3>
                         </div>
                         <div class="store-links">
-                            <a href="${app.googlePlay}" target="_blank">
+                            ${app.googlePlay ? `<a href="${app.googlePlay}" target="_blank">
                                 <i class="fab fa-google-play"></i> Google Play Store
-                            </a>
+                            </a>` : '<i>Coming soon</i>'}
                             ${app.appleStore ? `<a href="${app.appleStore}" target="_blank">
                                 <i class="fab fa-app-store-ios"></i> Apple App Store
                             </a>` : ''}

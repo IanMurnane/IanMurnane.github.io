@@ -1,10 +1,50 @@
 {
   "apps": [
     {
+      "title": "ATM Rewards",
+      "filename": "atmrewards",
+      "description": "Earn rewards by playing daily! Watch ads and complete challenges.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.atm_rewards",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
+      "title": "Aki Bear AI",
+      "filename": "akibear",
+      "description": "Infinite AI generated short anime-inspired stories",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai.anime",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
+      "title": "Baby Snooze",
+      "filename": "babysnooze",
+      "description": "Gentle music to help your baby sleep peacefully",
+      "googlePlay": "",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
+      "title": "Chillax",
+      "filename": "chillax",
+      "description": "Enjoy relaxing offline music with Chillax. Your music player for relaxation.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.chillax.chillax",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
       "title": "Don't B Late",
       "filename": "dontblate",
       "description": "Stay on track with reminders and countdowns.",
       "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.dont_be_late",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
+      "title": "Quick Sleep",
+      "filename": "quicksleep",
+      "description": "Calm offline music to help you sleep.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.chillax.quicksleep",
       "appleStore": "",
       "discordLink": "https://discord.gg/mNDANcde"
     },
@@ -21,6 +61,14 @@
       "filename": "storycub",
       "description": "Create and enjoy AI-generated stories for children.",
       "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai.kid",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
+      "title": "Story Fable",
+      "filename": "storyfable",
+      "description": "Infinite AI generated short stories for adults.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=io.bitbucket.imurnane.storybearai.adult",
       "appleStore": "",
       "discordLink": "https://discord.gg/mNDANcde"
     }
