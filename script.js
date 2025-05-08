@@ -7,11 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 const appCard = document.createElement('div');
                 appCard.classList.add('app-card');
 
+                const logoPath = `pics/logos/${app.filename}.png`;
+                const screenshotPath = `pics/screenshots/${app.filename}.jpeg`;
+                const privacyPolicyPath = `policies/privacy/${app.filename}.html`;
+                const tosPath = `policies/tos/${app.filename}.html`;
+
                 appCard.innerHTML = `
-                    <img src="${app.screenshot}" alt="${app.title} Screenshot" class="screenshot">
+                    <img src="${screenshotPath}" alt="${app.title} Screenshot" class="screenshot">
                     <div class="app-info">
                         <div class="logo-title">
-                            <img src="${app.logo}" alt="${app.title} Logo" class="logo">
+                            <img src="${logoPath}" alt="${app.title} Logo" class="logo">
                             <h3>${app.title}</h3>
                         </div>
                         <div class="store-links">
@@ -23,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             </a>` : ''}
                         </div>
                         <p>${app.description}</p>
-                        <a href="${app.privacyPolicy}" class="policy-link" target="_blank">Privacy Policy</a>
-                        <a href="${app.tos}" class="policy-link" target="_blank">Terms of Service</a>
+                        <a href="${privacyPolicyPath}" class="policy-link" target="_blank">Privacy Policy</a>
+                        <a href="${tosPath}" class="policy-link" target="_blank">Terms of Service</a>
                         ${app.discordLink ? `<p>
                             <i class="fab fa-discord"></i> <a href="${app.discordLink}" class="policy-link" target="_blank">Discord Channel</a>
                         </p>` : ''}
