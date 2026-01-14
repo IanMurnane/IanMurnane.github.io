@@ -42,7 +42,7 @@ footer {
 .app-card {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1.6rem 1rem;
     margin-bottom: 2rem;
     background-color: #ffffff;
     border-radius: 12px;
@@ -141,7 +141,7 @@ footer {
 @media (max-width: 768px) {
     .app-card {
         flex-direction: column;
-        margin: 1em;
+        margin: 1.6em 1em;
     }
 
     .app-card img.screenshot {
