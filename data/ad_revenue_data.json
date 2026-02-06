@@ -200,15 +200,6 @@
         "lastRevenues": [
           8032
         ]
-      },
-      {
-        "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 15087,
-        "ecpmMicros": 15087000,
-        "estimate1MViewsMicros": 15087000000,
-        "lastRevenues": [
-          15087
-        ]
       }
     ]
   },
