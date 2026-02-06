@@ -46,10 +46,10 @@
         ]
       }
     ],
-    "threeMonthsRevenueMicros": 1390235,
+    "threeMonthsRevenueMicros": 1416626,
     "threeMonthsRevenueMicrosRewardedInterstitial": 397871,
-    "threeMonthsRevenueMicrosRewarded": 270501,
-    "threeMonthsRevenueMicrosNative": 524076,
+    "threeMonthsRevenueMicrosRewarded": 278948,
+    "threeMonthsRevenueMicrosNative": 542020,
     "threeMonthsRevenueMicrosAppOpen": 161458,
     "threeMonthsRevenueMicrosBanner": 36329
   },
@@ -72,36 +72,16 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 2092,
-        "ecpmMicros": 2092240,
-        "estimate1MViewsMicros": 2092000000,
+        "averagePerAdMicros": 2203,
+        "ecpmMicros": 2202542,
+        "estimate1MViewsMicros": 2203000000,
         "lastRevenues": [
           4333,
           1490,
           1004,
           1530,
           3492,
-          1158,
-          1269,
-          2254
-        ]
-      },
-      {
-        "type": "App Open",
-        "averagePerAdMicros": 7403,
-        "ecpmMicros": 7403100,
-        "estimate1MViewsMicros": 7403000000,
-        "lastRevenues": [
-          8190,
-          3311,
-          3800,
-          3437,
-          2949,
-          4099,
-          10306,
-          8769,
-          6625,
-          14862
+          1158
         ]
       },
       {
@@ -112,6 +92,24 @@
         "lastRevenues": [
           2773,
           2743
+        ]
+      },
+      {
+        "type": "App Open",
+        "averagePerAdMicros": 7880,
+        "ecpmMicros": 7879762,
+        "estimate1MViewsMicros": 7880000000,
+        "lastRevenues": [
+          6692,
+          13869,
+          8190,
+          3311,
+          3800,
+          3437,
+          2949,
+          4099,
+          10306,
+          8769
         ]
       }
     ]
@@ -218,34 +216,13 @@
     "name": "CA",
     "adFormats": [
       {
-        "type": "Rewarded",
-        "averagePerAdMicros": 3648,
-        "ecpmMicros": 3648100,
-        "estimate1MViewsMicros": 3648000000,
-        "lastRevenues": [
-          3648
-        ]
-      },
-      {
         "type": "App Open",
-        "averagePerAdMicros": 4004,
-        "ecpmMicros": 4004000,
-        "estimate1MViewsMicros": 4004000000,
+        "averagePerAdMicros": 5911,
+        "ecpmMicros": 5910500,
+        "estimate1MViewsMicros": 5911000000,
         "lastRevenues": [
           10233,
-          1588,
-          191
-        ]
-      },
-      {
-        "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 3556,
-        "ecpmMicros": 3556250,
-        "estimate1MViewsMicros": 3556000000,
-        "lastRevenues": [
-          11779,
-          1097,
-          253
+          1588
         ]
       },
       {
@@ -268,19 +245,15 @@
           1027,
           2728
         ]
-      }
-    ]
-  },
-  {
-    "name": "CM",
-    "adFormats": [
+      },
       {
-        "type": "App Open",
-        "averagePerAdMicros": 792,
-        "ecpmMicros": 792000,
-        "estimate1MViewsMicros": 792000000,
+        "type": "Rewarded Interstitial",
+        "averagePerAdMicros": 4657,
+        "ecpmMicros": 4657333,
+        "estimate1MViewsMicros": 4657000000,
         "lastRevenues": [
-          792
+          11779,
+          1097
         ]
       }
     ]
@@ -290,9 +263,9 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 3960,
-        "ecpmMicros": 3959760,
-        "estimate1MViewsMicros": 3960000000,
+        "averagePerAdMicros": 9278,
+        "ecpmMicros": 9277852,
+        "estimate1MViewsMicros": 9278000000,
         "lastRevenues": [
           19029,
           12387,
@@ -308,10 +281,11 @@
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 2548,
-        "ecpmMicros": 2548304,
-        "estimate1MViewsMicros": 2548000000,
+        "averagePerAdMicros": 3604,
+        "ecpmMicros": 3604250,
+        "estimate1MViewsMicros": 3604000000,
         "lastRevenues": [
+          27891,
           8275,
           5284,
           3440,
@@ -320,8 +294,7 @@
           6275,
           80,
           1022,
-          1412,
-          509
+          1412
         ]
       },
       {
@@ -381,19 +354,19 @@
       {
         "type": "Banner",
         "averagePerAdMicros": 172,
-        "ecpmMicros": 171816,
+        "ecpmMicros": 171574,
         "estimate1MViewsMicros": 172000000,
         "lastRevenues": [
+          148,
+          137,
+          136,
+          219,
+          154,
+          202,
           173,
           210,
           165,
-          133,
-          134,
-          115,
-          93,
-          303,
-          122,
-          98
+          133
         ]
       },
       {
@@ -467,10 +440,11 @@
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 630,
-        "ecpmMicros": 630000,
-        "estimate1MViewsMicros": 630000000,
+        "averagePerAdMicros": 1275,
+        "ecpmMicros": 1274500,
+        "estimate1MViewsMicros": 1275000000,
         "lastRevenues": [
+          2564,
           1997,
           208,
           107
@@ -589,12 +563,11 @@
     "adFormats": [
       {
         "type": "Interstitial",
-        "averagePerAdMicros": 5735,
-        "ecpmMicros": 5734500,
-        "estimate1MViewsMicros": 5735000000,
+        "averagePerAdMicros": 5853,
+        "ecpmMicros": 5852667,
+        "estimate1MViewsMicros": 5853000000,
         "lastRevenues": [
-          5853,
-          5380
+          5853
         ]
       }
     ]
@@ -617,12 +590,12 @@
     "name": "HR",
     "adFormats": [
       {
-        "type": "Rewarded",
-        "averagePerAdMicros": 2342,
-        "ecpmMicros": 2342000,
-        "estimate1MViewsMicros": 2342000000,
+        "type": "App Open",
+        "averagePerAdMicros": 1286,
+        "ecpmMicros": 1286000,
+        "estimate1MViewsMicros": 1286000000,
         "lastRevenues": [
-          2342
+          1286
         ]
       }
     ]
@@ -648,24 +621,22 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 3587,
-        "ecpmMicros": 3586571,
-        "estimate1MViewsMicros": 3587000000,
+        "averagePerAdMicros": 4589,
+        "ecpmMicros": 4589000,
+        "estimate1MViewsMicros": 4589000000,
         "lastRevenues": [
           5987,
-          3192,
-          2250
+          3192
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 1328,
-        "ecpmMicros": 1327833,
-        "estimate1MViewsMicros": 1328000000,
+        "averagePerAdMicros": 1124,
+        "ecpmMicros": 1123500,
+        "estimate1MViewsMicros": 1124000000,
         "lastRevenues": [
           680,
-          1567,
-          1430
+          1567
         ]
       },
       {
@@ -702,9 +673,9 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 1750,
-        "ecpmMicros": 1749527,
-        "estimate1MViewsMicros": 1750000000,
+        "averagePerAdMicros": 1527,
+        "ecpmMicros": 1526810,
+        "estimate1MViewsMicros": 1527000000,
         "lastRevenues": [
           1621,
           2020,
@@ -720,9 +691,9 @@
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 902,
-        "ecpmMicros": 902311,
-        "estimate1MViewsMicros": 902000000,
+        "averagePerAdMicros": 796,
+        "ecpmMicros": 796419,
+        "estimate1MViewsMicros": 796000000,
         "lastRevenues": [
           927,
           1008,
@@ -738,9 +709,9 @@
       },
       {
         "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 772,
-        "ecpmMicros": 772375,
-        "estimate1MViewsMicros": 772000000,
+        "averagePerAdMicros": 661,
+        "ecpmMicros": 660600,
+        "estimate1MViewsMicros": 661000000,
         "lastRevenues": [
           713,
           291,
@@ -793,10 +764,11 @@
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 548,
-        "ecpmMicros": 547800,
-        "estimate1MViewsMicros": 548000000,
+        "averagePerAdMicros": 528,
+        "ecpmMicros": 528000,
+        "estimate1MViewsMicros": 528000000,
         "lastRevenues": [
+          429,
           75,
           75,
           99,
@@ -862,6 +834,20 @@
     ]
   },
   {
+    "name": "JM",
+    "adFormats": [
+      {
+        "type": "Native",
+        "averagePerAdMicros": 8972,
+        "ecpmMicros": 8972000,
+        "estimate1MViewsMicros": 8972000000,
+        "lastRevenues": [
+          8972
+        ]
+      }
+    ]
+  },
+  {
     "name": "JO",
     "adFormats": [
       {
@@ -874,29 +860,6 @@
           275,
           122,
           115
-        ]
-      }
-    ]
-  },
-  {
-    "name": "JP",
-    "adFormats": [
-      {
-        "type": "Rewarded",
-        "averagePerAdMicros": 82,
-        "ecpmMicros": 82333,
-        "estimate1MViewsMicros": 82000000,
-        "lastRevenues": [
-          82
-        ]
-      },
-      {
-        "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 27,
-        "ecpmMicros": 27000,
-        "estimate1MViewsMicros": 27000000,
-        "lastRevenues": [
-          27
         ]
       }
     ]
@@ -1019,20 +982,6 @@
     ]
   },
   {
-    "name": "MK",
-    "adFormats": [
-      {
-        "type": "App Open",
-        "averagePerAdMicros": 75,
-        "ecpmMicros": 75000,
-        "estimate1MViewsMicros": 75000000,
-        "lastRevenues": [
-          75
-        ]
-      }
-    ]
-  },
-  {
     "name": "MR",
     "adFormats": [
       {
@@ -1085,28 +1034,29 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 6531,
-        "ecpmMicros": 6531018,
-        "estimate1MViewsMicros": 6531000000,
+        "averagePerAdMicros": 4180,
+        "ecpmMicros": 4179995,
+        "estimate1MViewsMicros": 4180000000,
         "lastRevenues": [
+          3690,
+          2320,
+          3677,
+          5023,
+          6517,
+          5561,
+          9676,
           9508,
           452,
-          610,
-          11603,
-          10697,
-          6123,
-          5695,
-          6014,
-          4008,
-          4251
+          610
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 1498,
-        "ecpmMicros": 1498000,
-        "estimate1MViewsMicros": 1498000000,
+        "averagePerAdMicros": 1128,
+        "ecpmMicros": 1128111,
+        "estimate1MViewsMicros": 1128000000,
         "lastRevenues": [
+          1069,
           1153,
           1081,
           537,
@@ -1115,26 +1065,25 @@
           1312,
           395,
           432,
-          661,
-          2944
+          661
         ]
       },
       {
         "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 4424,
-        "ecpmMicros": 4424132,
-        "estimate1MViewsMicros": 4424000000,
+        "averagePerAdMicros": 4431,
+        "ecpmMicros": 4430761,
+        "estimate1MViewsMicros": 4431000000,
         "lastRevenues": [
+          3238,
+          3008,
+          9533,
+          7859,
+          6393,
           30378,
           4958,
           2148,
           1518,
-          1665,
-          6265,
-          2149,
-          1519,
-          2038,
-          976
+          1665
         ]
       }
     ]
@@ -1159,23 +1108,11 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 73,
-        "ecpmMicros": 72500,
-        "estimate1MViewsMicros": 73000000,
+        "averagePerAdMicros": 8447,
+        "ecpmMicros": 8447000,
+        "estimate1MViewsMicros": 8447000000,
         "lastRevenues": [
-          73
-        ]
-      },
-      {
-        "type": "App Open",
-        "averagePerAdMicros": 3350,
-        "ecpmMicros": 3350444,
-        "estimate1MViewsMicros": 3350000000,
-        "lastRevenues": [
-          5121,
-          1511,
-          1538,
-          4347
+          8447
         ]
       }
     ]
@@ -1185,9 +1122,9 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 945,
-        "ecpmMicros": 944802,
-        "estimate1MViewsMicros": 945000000,
+        "averagePerAdMicros": 1039,
+        "ecpmMicros": 1038625,
+        "estimate1MViewsMicros": 1039000000,
         "lastRevenues": [
           535,
           461,
@@ -1202,28 +1139,10 @@
         ]
       },
       {
-        "type": "App Open",
-        "averagePerAdMicros": 2242,
-        "ecpmMicros": 2241913,
-        "estimate1MViewsMicros": 2242000000,
-        "lastRevenues": [
-          881,
-          3702,
-          2868,
-          2860,
-          3662,
-          2515,
-          2411,
-          3087,
-          4048,
-          2745
-        ]
-      },
-      {
         "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 836,
-        "ecpmMicros": 836111,
-        "estimate1MViewsMicros": 836000000,
+        "averagePerAdMicros": 1062,
+        "ecpmMicros": 1062419,
+        "estimate1MViewsMicros": 1062000000,
         "lastRevenues": [
           879,
           1122,
@@ -1236,42 +1155,37 @@
           1355,
           803
         ]
+      },
+      {
+        "type": "App Open",
+        "averagePerAdMicros": 2889,
+        "ecpmMicros": 2888769,
+        "estimate1MViewsMicros": 2889000000,
+        "lastRevenues": [
+          881,
+          3702,
+          2868,
+          2860,
+          3662,
+          2515,
+          2411,
+          3087,
+          4048,
+          2745
+        ]
       }
     ]
   },
   {
-    "name": "NO",
+    "name": "PH",
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 1097,
-        "ecpmMicros": 1096600,
-        "estimate1MViewsMicros": 1097000000,
+        "averagePerAdMicros": 505,
+        "ecpmMicros": 505000,
+        "estimate1MViewsMicros": 505000000,
         "lastRevenues": [
-          1097
-        ]
-      },
-      {
-        "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 2452,
-        "ecpmMicros": 2451800,
-        "estimate1MViewsMicros": 2452000000,
-        "lastRevenues": [
-          2452
-        ]
-      }
-    ]
-  },
-  {
-    "name": "PA",
-    "adFormats": [
-      {
-        "type": "Interstitial",
-        "averagePerAdMicros": 1461,
-        "ecpmMicros": 1461000,
-        "estimate1MViewsMicros": 1461000000,
-        "lastRevenues": [
-          1461
+          505
         ]
       }
     ]
@@ -1314,26 +1228,23 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 5191,
-        "ecpmMicros": 5191313,
-        "estimate1MViewsMicros": 5191000000,
+        "averagePerAdMicros": 4835,
+        "ecpmMicros": 4834667,
+        "estimate1MViewsMicros": 4835000000,
         "lastRevenues": [
-          4835,
-          3826,
-          5394
+          4835
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 2058,
-        "ecpmMicros": 2058167,
-        "estimate1MViewsMicros": 2058000000,
+        "averagePerAdMicros": 2302,
+        "ecpmMicros": 2301600,
+        "estimate1MViewsMicros": 2302000000,
         "lastRevenues": [
           2640,
           2335,
           1623,
-          2271,
-          841
+          2271
         ]
       },
       {
@@ -1371,10 +1282,11 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 634,
-        "ecpmMicros": 634189,
-        "estimate1MViewsMicros": 634000000,
+        "averagePerAdMicros": 1309,
+        "ecpmMicros": 1309170,
+        "estimate1MViewsMicros": 1309000000,
         "lastRevenues": [
+          5254,
           3882,
           524,
           609,
@@ -1383,28 +1295,14 @@
           902,
           482,
           630,
-          732,
-          594
-        ]
-      },
-      {
-        "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 1265,
-        "ecpmMicros": 1264600,
-        "estimate1MViewsMicros": 1265000000,
-        "lastRevenues": [
-          3190,
-          584,
-          731,
-          389,
-          1429
+          732
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 838,
-        "ecpmMicros": 838160,
-        "estimate1MViewsMicros": 838000000,
+        "averagePerAdMicros": 1009,
+        "ecpmMicros": 1009474,
+        "estimate1MViewsMicros": 1009000000,
         "lastRevenues": [
           842,
           1370,
@@ -1416,6 +1314,17 @@
           1140,
           705,
           297
+        ]
+      },
+      {
+        "type": "Rewarded Interstitial",
+        "averagePerAdMicros": 1502,
+        "ecpmMicros": 1501667,
+        "estimate1MViewsMicros": 1502000000,
+        "lastRevenues": [
+          3190,
+          584,
+          731
         ]
       }
     ]
@@ -1529,20 +1438,6 @@
     ]
   },
   {
-    "name": "TN",
-    "adFormats": [
-      {
-        "type": "App Open",
-        "averagePerAdMicros": 87,
-        "ecpmMicros": 87000,
-        "estimate1MViewsMicros": 87000000,
-        "lastRevenues": [
-          87
-        ]
-      }
-    ]
-  },
-  {
     "name": "TR",
     "adFormats": [
       {
@@ -1617,28 +1512,29 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 7067,
-        "ecpmMicros": 7066741,
-        "estimate1MViewsMicros": 7067000000,
+        "averagePerAdMicros": 6007,
+        "ecpmMicros": 6006864,
+        "estimate1MViewsMicros": 6007000000,
         "lastRevenues": [
+          12732,
+          1423,
+          21596,
           10823,
           9505,
           16297,
           9682,
           29471,
           3914,
-          10583,
-          5987,
-          4851,
-          7069
+          10583
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 4922,
-        "ecpmMicros": 4921610,
-        "estimate1MViewsMicros": 4922000000,
+        "averagePerAdMicros": 3897,
+        "ecpmMicros": 3897387,
+        "estimate1MViewsMicros": 3897000000,
         "lastRevenues": [
+          1173,
           8116,
           54114,
           8004,
@@ -1647,16 +1543,16 @@
           10721,
           2276,
           2274,
-          8231,
-          2250
+          8231
         ]
       },
       {
         "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 16532,
-        "ecpmMicros": 16531564,
-        "estimate1MViewsMicros": 16532000000,
+        "averagePerAdMicros": 13884,
+        "ecpmMicros": 13884333,
+        "estimate1MViewsMicros": 13884000000,
         "lastRevenues": [
+          21317,
           17951,
           9550,
           20469,
@@ -1665,8 +1561,7 @@
           34095,
           27290,
           3809,
-          4717,
-          269
+          4717
         ]
       },
       {
@@ -1713,46 +1608,47 @@
     "adFormats": [
       {
         "type": "Rewarded",
-        "averagePerAdMicros": 596,
-        "ecpmMicros": 595713,
-        "estimate1MViewsMicros": 596000000,
+        "averagePerAdMicros": 557,
+        "ecpmMicros": 556784,
+        "estimate1MViewsMicros": 557000000,
         "lastRevenues": [
-          640,
-          1134,
-          539,
-          942,
-          1221,
-          612,
-          464,
-          433,
-          308,
-          328
+          859,
+          424,
+          657,
+          532,
+          488,
+          621,
+          400,
+          376,
+          391,
+          372
         ]
       },
       {
         "type": "App Open",
-        "averagePerAdMicros": 450,
-        "ecpmMicros": 450243,
-        "estimate1MViewsMicros": 450000000,
+        "averagePerAdMicros": 533,
+        "ecpmMicros": 532744,
+        "estimate1MViewsMicros": 533000000,
         "lastRevenues": [
+          406,
+          1280,
+          392,
+          170,
+          555,
+          302,
+          690,
+          341,
           445,
-          629,
-          1127,
-          1077,
-          682,
-          582,
-          343,
-          524,
-          160,
-          182
+          629
         ]
       },
       {
         "type": "Rewarded Interstitial",
-        "averagePerAdMicros": 547,
-        "ecpmMicros": 547368,
-        "estimate1MViewsMicros": 547000000,
+        "averagePerAdMicros": 541,
+        "ecpmMicros": 541256,
+        "estimate1MViewsMicros": 541000000,
         "lastRevenues": [
+          304,
           389,
           673,
           263,
@@ -1761,8 +1657,7 @@
           830,
           370,
           983,
-          644,
-          679
+          644
         ]
       },
       {
