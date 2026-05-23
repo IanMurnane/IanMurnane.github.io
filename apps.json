@@ -9,6 +9,14 @@
       "discordLink": "https://discord.gg/mNDANcde"
     },
     {
+      "title": "One Line Logger",
+      "filename": "onelinelogger",
+      "description": "A simple, zero-config remote logging utility for Flutter. Send logs from your user's devices to a central dashboard with a single line of code.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.apparcadestudios.onelinelogger",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
       "title": "Ad Revenue Explorer",
       "filename": "adrevenueexplorer",
       "description": "Ad Revenue Explorer helps developers, publishers, and the curious understand how mobile ad revenue varies across countries and ad formats.",
