@@ -36,6 +36,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0 1rem; /* Added padding to prevent cards touching edges */
 }
 
 /* App Card Styles */
@@ -53,6 +54,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .app-card:hover {
@@ -65,6 +67,7 @@ footer {
     width: auto;
     object-fit: cover;
     flex-shrink: 0;
+    border-radius: 6px; /* Slightly softened image corners */
 }
 
 .app-info {
@@ -90,19 +93,24 @@ footer {
 .app-info h3 {
     font-size: 1.75em;
     color: #121212;
+    margin: 0;
 }
 
 .app-info .store-links {
     display: flex;
     gap: 15px;
-    margin: 10px 0;
+    margin: 15px 0;
     align-items: center;
+    flex-wrap: wrap; /* Keeps multi-store links from overflowing */
 }
 
 .app-info .store-links a {
     font-size: 1em;
     color: #007bff;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .app-info .store-links a:hover {
@@ -118,15 +126,18 @@ footer {
     font-size: 1em;
     color: #555;
     line-height: 1.5;
+    margin-top: 0;
     margin-bottom: 20px;
-    word-wrap: break-word;  /* Prevent text from getting cut off */
-    overflow-wrap: break-word; /* Ensures word wrapping works well */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .app-info a.policy-link {
     font-size: 0.9em;
     color: #007bff;
     text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .app-info a.policy-link:hover {
@@ -141,32 +152,46 @@ footer {
 @media (max-width: 768px) {
     .app-card {
         flex-direction: column;
-        margin: 1.6em 1em;
+        align-items: center; /* Center items on mobile viewport */
+        margin: 1.6em auto;
+        padding: 1.5rem;
+        gap: 1rem;
     }
 
+    /* Constrains the mobile screenshot size securely */
     .app-card img.screenshot {
         width: 100%;
+        max-width: 280px;  /* Keeps the phone template looking proportional */
         height: auto;
+        max-height: 450px; /* Cap vertical consumption */
+        object-fit: contain;
     }
 
     .app-info {
         max-width: none;
+        padding: 10px 0 0 0;
+    }
+
+    .app-info .logo-title {
+        justify-content: flex-start;
+        width: 100%;
     }
 
     .app-info img.logo {
-        max-width: 80px;
+        max-width: 65px;
     }
 
     .app-info h3 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .app-info .store-links {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Keep them next to each other if room permits */
+        align-items: center;
+        gap: 12px;
     }
 
     .app-info p {
-        font-size: 0.9em;
+        font-size: 0.95em;
     }
 }
