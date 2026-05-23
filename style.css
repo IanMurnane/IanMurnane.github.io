@@ -35,32 +35,18 @@ footer {
     padding: 1.5em 0;
 }
 
-/* Container: CSS Grid for Multi-Column Layout */
+/* Container: Flexbox for Fluid Wrapping */
 #apps-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
     padding: 2rem 1.5rem;
     max-width: 1600px;
     margin: 0 auto;
 }
 
-/* Desktop Layout (4 Columns) */
-@media (min-width: 1200px) {
-    #apps-container {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2.5rem;
-    }
-}
-
-/* Tablet / Small Laptop Layout (2 Columns) */
-@media (min-width: 768px) and (max-width: 1199px) {
-    #apps-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* App Card Styles (Now a wrapper for the image) */
+/* App Card Styles (Height-Driven Layout) */
 .app-card {
     position: relative;
     display: flex;
@@ -70,18 +56,26 @@ footer {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+    /* Height strictly locked to screen size */
+    height: 80vh;
+    height: 80dvh;
+    max-height: 750px;
+    min-height: 350px;
+    max-width: calc(100vw - 3rem);
 }
 
-/* Image now dictates the card size */
+/* Image now dictates the card's width */
 .app-card img.screenshot {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
     display: block;
     object-fit: contain;
     transition: transform 0.5s ease;
 }
 
-/* Hover effect lifts the card and slightly zooms the image */
+/* Hover effect */
 .app-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -94,20 +88,20 @@ footer {
 /* Scrollable Info Area (Floating Overlay) */
 .app-info {
     position: absolute;
-    top: 50%; /* STRICT ALIGNMENT: Starts exactly halfway down the image */
-    bottom: 0; /* Stretches to the very bottom */
+    top: 50%;
+    bottom: 0;
     left: 0;
     width: 100%;
 
     display: flex;
     flex-direction: column;
-    padding: 25px 20px 20px;
+    padding: 18px 15px; /* Slightly tighter padding to match the smaller text */
     box-sizing: border-box;
     overflow-y: auto;
 
-    /* FROSTED GLASS TRANSPARENT EFFECT (Adjusted to your preferences) */
-    background: rgba(255, 255, 255, 0.8); /* 0.8 transparency */
-    backdrop-filter: blur(2px); /* 2px blur */
+    /* FROSTED GLASS TRANSPARENT EFFECT */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -115,7 +109,7 @@ footer {
 
 /* Scrollbar styling for the info card */
 .app-info::-webkit-scrollbar {
-    width: 6px;
+    width: 4px; /* Slimmer scrollbar to match sleek design */
 }
 .app-info::-webkit-scrollbar-thumb {
     background-color: #a1a1aa;
@@ -125,19 +119,20 @@ footer {
 .app-info .logo-title {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .app-info img.logo {
-    width: 48px;
-    height: 48px;
+    width: 40px; /* Shrunk from 48px to look more premium */
+    height: 40px;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
+/* CLAMP TYPOGRAPHY: clamp(Minimum, Preferred Viewport calculation, Maximum) */
 .app-info h3 {
-    font-size: 1.3em;
+    font-size: clamp(1rem, 2vw, 1.15rem); /* Visibly smaller than before, scales nicely */
     font-weight: 600;
     color: #111827;
     margin: 0;
@@ -145,14 +140,14 @@ footer {
 
 .app-info .store-links {
     display: flex;
-    gap: 15px;
-    margin: 10px 0;
+    gap: 12px;
+    margin: 8px 0;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .app-info .store-links a {
-    font-size: 0.9em;
+    font-size: clamp(0.8rem, 1.5vw, 0.85rem);
     font-weight: 500;
     color: #2563eb;
     text-decoration: none;
@@ -168,15 +163,15 @@ footer {
 }
 
 .app-info p {
-    font-size: 0.95em;
+    font-size: clamp(0.8rem, 1.5vw, 0.85rem);
     color: #374151;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .app-info a.policy-link {
-    font-size: 0.85em;
+    font-size: clamp(0.7rem, 1vw, 0.75rem); /* Small and unobtrusive */
     color: #6b7280;
     text-decoration: none;
     margin-right: 15px;
