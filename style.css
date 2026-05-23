@@ -57,9 +57,9 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 
-    /* Height strictly locked to screen size */
-    height: 80vh;
-    height: 80dvh;
+    /* THE FIX: Changed from dvh to svh to prevent mobile scroll jumping */
+    height: 80vh; /* Fallback for older browsers */
+    height: 80svh; /* Locks to the 'Small Viewport Height' */
     max-height: 750px;
     min-height: 350px;
     max-width: calc(100vw - 3rem);
@@ -88,16 +88,15 @@ footer {
 /* Scrollable Info Area (Floating Overlay) */
 .app-info {
     position: absolute;
-    top: 50%;
+    top: 65%;
     bottom: 0;
     left: 0;
     width: 100%;
 
     display: flex;
     flex-direction: column;
-    padding: 18px 15px; /* Slightly tighter padding to match the smaller text */
+    padding: 16px 15px;
     box-sizing: border-box;
-    overflow-y: auto;
 
     /* FROSTED GLASS TRANSPARENT EFFECT */
     background: rgba(255, 255, 255, 0.8);
@@ -105,15 +104,6 @@ footer {
     -webkit-backdrop-filter: blur(2px);
 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-/* Scrollbar styling for the info card */
-.app-info::-webkit-scrollbar {
-    width: 4px; /* Slimmer scrollbar to match sleek design */
-}
-.app-info::-webkit-scrollbar-thumb {
-    background-color: #a1a1aa;
-    border-radius: 4px;
 }
 
 .app-info .logo-title {
@@ -124,68 +114,82 @@ footer {
 }
 
 .app-info img.logo {
-    width: 40px; /* Shrunk from 48px to look more premium */
+    width: 40px;
     height: 40px;
     object-fit: contain;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
-/* CLAMP TYPOGRAPHY: clamp(Minimum, Preferred Viewport calculation, Maximum) */
 .app-info h3 {
-    font-size: clamp(1rem, 2vw, 1.15rem); /* Visibly smaller than before, scales nicely */
+    font-size: 1.15rem;
+    line-height: 1.3;
+    max-height: 2.6em;
     font-weight: 600;
     color: #111827;
     margin: 0;
+    overflow: hidden;
 }
 
-.app-info .store-links {
-    display: flex;
-    gap: 12px;
-    margin: 8px 0;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.app-info .store-links a {
-    font-size: clamp(0.8rem, 1.5vw, 0.85rem);
-    font-weight: 500;
-    color: #2563eb;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: color 0.2s ease;
-}
-
-.app-info .store-links a:hover {
-    color: #1d4ed8;
-    text-decoration: underline;
-}
-
-.app-info p {
-    font-size: clamp(0.8rem, 1.5vw, 0.85rem);
+/* Description text - flex-grow pushes the icon dock to the bottom */
+.app-info p.description {
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
     color: #374151;
     line-height: 1.5;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin: 0 0 5px 0;
+    flex-grow: 1; /* Pushes the icon dock down */
+    overflow-y: auto; /* Internal scrolling if the text is too long */
 }
 
-.app-info a.policy-link {
-    font-size: clamp(0.7rem, 1vw, 0.75rem); /* Small and unobtrusive */
+/* Scrollbar styling for the description */
+.app-info p.description::-webkit-scrollbar {
+    width: 4px;
+}
+.app-info p.description::-webkit-scrollbar-thumb {
+    background-color: #a1a1aa;
+    border-radius: 4px;
+}
+
+/* --- THE NEW ICON DOCK --- */
+.icon-dock {
+    display: flex;
+    justify-content: space-between; /* Left and right groups to the edges */
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dock-left, .dock-right {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+/* Base Icon Styles */
+.icon-link {
+    font-size: 1.1rem;
     color: #6b7280;
     text-decoration: none;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    display: inline-block;
-    transition: color 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.app-info a.policy-link:hover {
-    color: #2563eb;
-    text-decoration: underline;
+.icon-link:hover {
+    transform: scale(1.15);
 }
 
-.app-info .fa-discord {
-    color: #5865F2;
-    margin-right: 4px;
+/* Colorful Active Hover States */
+.icon-link.play-active:hover { color: #2563eb; }
+.icon-link.ios-active:hover { color: #000000; }
+.icon-link.discord-active { color: #6b7280; }
+.icon-link.discord-active:hover { color: #4752C4; filter: brightness(1.1); }
+.icon-link.doc-link:hover { color: #2563eb; }
+
+/* Disabled / Unavailable State */
+.icon-link.disabled {
+    color: #b2b6bc;
+    pointer-events: none;
+    cursor: default;
 }
