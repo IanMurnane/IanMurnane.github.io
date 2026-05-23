@@ -1,9 +1,12 @@
+/* Import a modern, premium font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f6f8;
     color: #333;
 }
 
@@ -32,166 +35,162 @@ footer {
     padding: 1.5em 0;
 }
 
-.apps-container {
-    display: flex;
-    flex-direction: column;
+/* Container: CSS Grid for Multi-Column Layout */
+#apps-container {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 0 1rem; /* Added padding to prevent cards touching edges */
+    padding: 2rem 1.5rem;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-/* App Card Styles */
+/* Desktop Layout (4 Columns) */
+@media (min-width: 1200px) {
+    #apps-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+/* Tablet / Small Laptop Layout (2 Columns) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #apps-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* App Card Styles (Now a wrapper for the image) */
 .app-card {
+    position: relative;
     display: flex;
-    align-items: flex-start;
-    gap: 1.6rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #ffffff;
-    border-radius: 12px;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    border-radius: 14px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    box-sizing: border-box;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
-.app-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
+/* Image now dictates the card size */
 .app-card img.screenshot {
-    height: 350px;
-    width: auto;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 6px; /* Slightly softened image corners */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.5s ease;
 }
 
+/* Hover effect lifts the card and slightly zooms the image */
+.app-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.app-card:hover img.screenshot {
+    transform: scale(1.03);
+}
+
+/* Scrollable Info Area (Floating Overlay) */
 .app-info {
+    position: absolute;
+    top: 50%; /* STRICT ALIGNMENT: Starts exactly halfway down the image */
+    bottom: 0; /* Stretches to the very bottom */
+    left: 0;
+    width: 100%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    max-width: 500px;
-    width: 100%;
+    padding: 25px 20px 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+
+    /* FROSTED GLASS TRANSPARENT EFFECT (Adjusted to your preferences) */
+    background: rgba(255, 255, 255, 0.8); /* 0.8 transparency */
+    backdrop-filter: blur(2px); /* 2px blur */
+    -webkit-backdrop-filter: blur(2px);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Scrollbar styling for the info card */
+.app-info::-webkit-scrollbar {
+    width: 6px;
+}
+.app-info::-webkit-scrollbar-thumb {
+    background-color: #a1a1aa;
+    border-radius: 4px;
 }
 
 .app-info .logo-title {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
 .app-info img.logo {
-    max-width: 100px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .app-info h3 {
-    font-size: 1.75em;
-    color: #121212;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #111827;
     margin: 0;
 }
 
 .app-info .store-links {
     display: flex;
     gap: 15px;
-    margin: 15px 0;
+    margin: 10px 0;
     align-items: center;
-    flex-wrap: wrap; /* Keeps multi-store links from overflowing */
+    flex-wrap: wrap;
 }
 
 .app-info .store-links a {
-    font-size: 1em;
-    color: #007bff;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #2563eb;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    transition: color 0.2s ease;
 }
 
 .app-info .store-links a:hover {
+    color: #1d4ed8;
     text-decoration: underline;
 }
 
-.app-info .store-links img {
-    height: 24px;  /* Store icon size */
-    width: auto;
-}
-
 .app-info p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.5;
-    margin-top: 0;
+    font-size: 0.95em;
+    color: #374151;
+    line-height: 1.6;
+    margin-top: 5px;
     margin-bottom: 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 .app-info a.policy-link {
-    font-size: 0.9em;
-    color: #007bff;
+    font-size: 0.85em;
+    color: #6b7280;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
     display: inline-block;
+    transition: color 0.2s ease;
 }
 
 .app-info a.policy-link:hover {
+    color: #2563eb;
     text-decoration: underline;
 }
 
 .app-info .fa-discord {
-    color: #7289da;  /* Discord color */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .app-card {
-        flex-direction: column;
-        align-items: center; /* Center items on mobile viewport */
-        margin: 1.6em auto;
-        padding: 1.5rem;
-        gap: 1rem;
-    }
-
-    /* Constrains the mobile screenshot size securely */
-    .app-card img.screenshot {
-        width: 100%;
-        max-width: 280px;  /* Keeps the phone template looking proportional */
-        height: auto;
-        max-height: 450px; /* Cap vertical consumption */
-        object-fit: contain;
-    }
-
-    .app-info {
-        max-width: none;
-        padding: 10px 0 0 0;
-    }
-
-    .app-info .logo-title {
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    .app-info img.logo {
-        max-width: 65px;
-    }
-
-    .app-info h3 {
-        font-size: 1.4em;
-    }
-
-    .app-info .store-links {
-        flex-direction: row; /* Keep them next to each other if room permits */
-        align-items: center;
-        gap: 12px;
-    }
-
-    .app-info p {
-        font-size: 0.95em;
-    }
+    color: #5865F2;
+    margin-right: 4px;
 }
