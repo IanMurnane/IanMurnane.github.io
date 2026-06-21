@@ -78,20 +78,6 @@
     ]
   },
   {
-    "name": "AT",
-    "adFormats": [
-      {
-        "type": "Rewarded",
-        "averagePerAdMicros": 40597,
-        "ecpmMicros": 40597000,
-        "estimate1MViewsMicros": 40597000000,
-        "lastRevenues": [
-          40597
-        ]
-      }
-    ]
-  },
-  {
     "name": "AU",
     "adFormats": [
       {
@@ -1889,30 +1875,6 @@
         "estimate1MViewsMicros": 568000000,
         "lastRevenues": [
           568
-        ]
-      }
-    ]
-  },
-  {
-    "name": "NL",
-    "adFormats": [
-      {
-        "type": "Rewarded",
-        "averagePerAdMicros": 35223,
-        "ecpmMicros": 35223000,
-        "estimate1MViewsMicros": 35223000000,
-        "lastRevenues": [
-          35223
-        ]
-      },
-      {
-        "type": "App Open",
-        "averagePerAdMicros": 5627,
-        "ecpmMicros": 5627400,
-        "estimate1MViewsMicros": 5627000000,
-        "lastRevenues": [
-          5538,
-          5761
         ]
       }
     ]
