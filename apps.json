@@ -25,6 +25,14 @@
       "discordLink": "https://discord.gg/mNDANcde"
     },
     {
+      "title": "Secure Player",
+      "filename": "secureplayer",
+      "description": "A simple reliable, local and secure video player.",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.apparcadestudios.secureplayer",
+      "appleStore": "",
+      "discordLink": "https://discord.gg/mNDANcde"
+    },
+    {
       "title": "Aki Bear AI",
       "filename": "akibear",
       "description": "Infinite AI generated short anime-inspired stories",
